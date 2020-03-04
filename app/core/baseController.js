@@ -8,7 +8,7 @@ class BaseController extends Controller{
         const {ctx}=this
         let params={code:'100200',...param}
         ctx.body={
-            ...param,
+            ...params,
             msg:ctx.helper.codeMsg[params.code]
         }
     }
